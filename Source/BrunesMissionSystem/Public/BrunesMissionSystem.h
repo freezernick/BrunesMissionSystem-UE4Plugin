@@ -2,7 +2,11 @@
 
 #pragma once
 
+#if __has_include ("Modules/ModuleManager.h")
+#include "Modules/ModuleManager.h"
+#else
 #include "ModuleManager.h"
+#endif
 
 class FBrunesMissionSystemModule : public IModuleInterface
 {

@@ -1,7 +1,11 @@
 // Copyright Underflow Studios 2017
 
 #include "BruMissionMetaData.h"
+#if __has_include ("UObject/Package.h")
+#include "UObject/Package.h"
+#else
 #include "Package.h"
+#endif
 #include "UObject/UObjectGlobals.h"
 #include "BruMissionManager.h"
 
